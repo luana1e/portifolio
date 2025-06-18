@@ -1,81 +1,114 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Portfólio de Luana Alves - MeowFlix App</title>
     <link rel="stylesheet" href="style.css">
-    <title>Meu portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
-  <header class="container text-center">
-        <img src="img/avatar-perfil.png" alt="avatar da Luana" class="rounded-circle" width="150" height="150"
-            srcset="">
-        <p class="lead">Eu sou Luana_</p>
-        <h1>Eu sou estudante do colegio Morozowski</h1>
-        <p>Estou no segundo ano do ensino medio,tenho 17 anos e estou projetando um trbalho de programacao.
-            meu projeto é sobre um app para ver filmes.
-        </p>
-        <p>Minhas habilidades</p>
-        <div>
-            <p class="badge bg-secondary">HTML</p>
-            <p class="badge bg-secondary">CSS</p>
-            <p class="badge bg-secondary">JavaScript</p>
-            <p class="badge bg-secondary">Scratch</p>
+    <header>
+        <div class="container">
+            <h1 class="logo">MeowFlix</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre Mim</a></li>
+                    <li><a href="#features">Recursos</a></li>
+                    <li><a href="#showcase">Mostruário</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <main class="container mt-5">
-        <h2>Meus projetos</h2>
-        <div class="row">
-            <!-- Projeto 1 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="img/projeto-1.png" class="card-img-top" alt="Imagem do Meowflix">
-                    <div class="card-body">
-                        <h5 class="card-title">meowflix: assista filme gratis github
-                        </h5>
-                        <p class="card-text">Este projeto é uma página web que apresenta uma lista de filmes 
-                            famosos para serem acessados gratuitament
-                             A página é estilizada com CSS para uma visualização agradável e usa fontes
-                            externas do Google Fonts.
-                        </p>
-                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja
-                            o projeto</button>
-                    </div>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Seu próximo filme favorito está aqui.</h2>
+                <p>Descubra um universo de filmes e séries, 
+                    com a melhor experiência de streaming, 
+                    feito com carinho pela equipe MeowFlix.</p>
+                <a href="#features" class="btn">Explorar Recursos <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/450x350/0D1117/89CFF0?text=MeowFlix+App+Mockup" alt="Mockup do aplicativo MeowFlix">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h3>Um pouco sobre mim</h3>
+            <div class="about-content">
+                <img src="https://via.placeholder.com/150x150/0D1117/89CFF0?text=Sua+Foto" alt="Sua foto de perfil" class="profile-pic">
+                <p>Olá! Sou **Luana Alves de Carlos**, tenho **17 anos**
+                    e sou estudante do **Colégio Morozowski**. Este projeto, 
+                    o MeowFlix, faz parte dos meus estudos em programação 
+                    e reflete minha paixão por tecnologia e entretenimento. 
+                    Estou animada em aprender e criar soluções como este aplicativo de filmes!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h3>Principais Recursos do MeowFlix</h3>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <i class="fas fa-tv"></i>
+                    <h4>Amplo Catálogo</h4>
+                    <p>Milhares de títulos, de clássicos
+                        a lançamentos, sempre atualizados.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-search"></i>
+                    <h4>Busca Inteligente</h4>
+                    <p>Encontre filmes e séries com filtros avançados 
+                    e sugestões.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-sliders-h"></i>
+                    <h4>Personalização</h4>
+                    <p>Crie perfis, listas e receba 
+                        recomendações exclusivas para você.</p>
                 </div>
             </div>
+        </div>
+    </section>
 
-    <!-- Modal 1 -->
-    <div class="modal" id="modal1" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"> meowflix: assista filme gratis </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>O projeto é uma página web criada com HTML e CSS, destinada a exibir uma coleção de
-                        filmes. O objetivo é criar um ambiente virtual onde seja possível acessar 
-                        seus filmes preferidos com alta qualidade gratuitamente.
-                        </p>
-                    <p>A estrutura do site é baseada em HTML, que define a semântica e o layout do conteúdo,
-                        enquanto o CSS é usado para estilizar a página visualmente, incluindo cores, tipografia e a
-                        disposição dos elementos.</p>
-                    <p>O HTML organiza o conteúdo em um cabeçalho com o título do site, seguido por uma divisão
-                        principal (.container) que apresenta o propósito do site e a coleção de filmes em uma seção
-                        flexível (.filmes). Cada livro é destacado em seu próprio contêiner (.filmes), mostrando uma
-                        imagem da capa, detalhes do filme e um link de acesso. O design responsivo é garantido pelo
-                        uso de uma meta tag viewport e um layout flexível que se adapta a diferentes tamanhos de
-                        tela.</p>
-                    <p>O CSS personaliza o visual do site, usando variáveis para cores, estilizando o texto com uma
-                        fonte importada do Google Fonts e aplicando um esquema de cores suaves e botões interativos.
-                        O uso de HTML e CSS é importante pois assim é possível criar um site acessível e
-                        esteticamente agradável sem a necessidade de scripts complexos, com foco na usabilidade e na
-                        experiência da pessoa usuária. A escolha da tipografia e do esquema de cores contribui para
-                        a atmosfera acolhedora do site, incentivando a exploração da coleção de filmes.</p>
-                    <img src="img/projeto-1.png" alt="Imagem representativa do projeto de filmes online">
-                </div>
-                <div class="modal-footer">
+    <section id="showcase" class="showcase">
+        <div class="container">
+            <h3>Visualização do MeowFlix</h3>
+            <div class="screenshot-grid">
+                <img src="https://via.placeholder.com/300x500/0D1117/89CFF0?text=Tela+Principal+MeowFlix" alt="Tela principal do aplicativo MeowFlix">
+                <img src="https://via.placeholder.com/300x500/0D1117/89CFF0?text=Detalhes+Filme+MeowFlix" alt="Tela de detalhes de um filme MeowFlix">
+                <img src="https://via.placeholder.com/300x500/0D1117/89CFF0?text=Resultados+Busca+MeowFlix" alt="Tela de resultados de busca MeowFlix">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h3>Vamos Conversar!</h3>
+            <p>Interessada(o) em saber mais sobre o MeowFlix ou meus projetos?
+                Me envie uma mensagem!</p>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu Melhor Email" required>
+                <textarea name="message" placeholder="Sua Mensagem..." rows="5" required></textarea>
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 **Luana Alves de Carlos**. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
                     
