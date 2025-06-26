@@ -18,7 +18,8 @@ h1, h2, h5 {
 
 .lead, .btn-link {
     color: var(--cor-destaque);
-    font-weight: 700;
+    font-weight: 700;:root {
+
 }
 
 a, .btn-link:hover {
