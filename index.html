@@ -1,124 +1,94 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio de Luana Alves - MeowFlix App</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Portfólio de Luana</title>
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <h1 class="logo">MeowFlix</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#about">Sobre Mim</a></li>
-                    <li><a href="#features">Recursos</a></li>
-                    <li><a href="#showcase">Mostruário</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header class="container text-center my-5">
+    <img src="img/avatar-perfil.png" alt="Avatar da Luana" class="rounded-circle" width="150" height="150" />
+    <p class="lead mt-3">Olá, eu sou a Luana_</p>
+    <h1>Estudante e Desenvolvedora em Formação</h1>
+    <p>
+      Tenho 17 anos e estou no 2º ano do Ensino Médio no Colégio Morozowski.
+      Este é meu portfólio de programação, onde compartilho o projeto que desenvolvi 
+      na disciplina de Programação.
+    </p>
+    <p>Minhas habilidades</p>
+    <div>
+      <span class="badge bg-secondary">HTML</span>
+      <span class="badge bg-secondary">CSS</span>
+      <span class="badge bg-secondary">JavaScript</span>
+    </div>
+  </header>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h2>Seu próximo filme favorito está aqui.</h2>
-                <p>Descubra um universo de filmes e séries, 
-                    com a melhor experiência de streaming, 
-                    feito com carinho pela equipe MeowFlix.</p>
-                <a href="#features" class="btn">Explorar Recursos <i class="fas fa-arrow-right"></i></a>
-            </div> 
-           <p class="badge bg-secondary">HTML</p>
-            <p class="badge bg-secondary">CSS</p>
-            <p class="badge bg-secondary">JavaScript</p>
-            <p class="badge bg-secondary">Scratch</p>
+  <main class="container mt-5">
+    <h2>Meu Projeto</h2>
+    <div class="row">
+      <!-- Projeto Meowflix -->
+      <div class="col-md-6 offset-md-3">
+        <div class="card">
+          <img src="img/meowflix-capa.png" class="card-img-top" alt="Imagem do projeto Meowflix" />
+          <div class="card-body">
+            <h5 class="card-title">Meowflix: App de Filmes e Séries Grátis</h5>
+            <p class="card-text">
+              O Meowflix é um aplicativo desenvolvido para assistir a filmes e séries 
+                de forma gratuita. O projeto foi criado como parte
+                da disciplina de Programação e usa HTML, CSS e JavaScript.
+                A interface é simples, divertida e intuitiva.
+            </p>
+            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalMeowflix">
+              Veja o projeto
+            </button>
+          </div>
         </div>
-    </header>
-    <main class="container mt-5">
-            <div class="hero-image">
-                <img src="https://via.placeholder.com/450x350/0D1117/89CFF0?text=MeowFlix+App+Mockup" alt="Mockup do aplicativo MeowFlix">
-                
-            </div>
-        </div>
-    </section>
+      </div>
+    </div>
+  </main>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h3>Um pouco sobre mim</h3>
-            <div class="about-content">
-                <img src="https://via.placeholder.com/150x150/0D1117/89CFF0?text=Sua+Foto" alt="Sua foto de perfil" class="profile-pic">
-                <p>Olá! Sou **Luana Alves de Carlos**, tenho **17 anos**
-                    e sou estudante do **Colégio Maria de Lourdes R. Morozowski**.
-                     Este projeto, o MeowFlix, faz parte dos meus estudos em programação 
-                    e reflete minha paixão por tecnologia e entretenimento. 
-                    Estou animada em aprender e criar soluções 
-                    como este aplicativo de filmes!</p>
-            </div>
-            </div>
-          </section>
-         
-          <section id="features" class="features">
-        <div class="container">
-            <h3>Principais Recursos do MeowFlix</h3>
-            <div class="feature-grid">
-                <div class="feature-item">
-                    <i class="fas fa-tv"></i>
-                    <h4>Amplo Catálogo</h4>
-                    <p>Milhares de títulos, de clássicos
-                        a lançamentos, sempre atualizados.</p>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-search"></i>
-                    <h4>Busca Inteligente</h4>
-                    <p>Encontre filmes e séries com filtros avançados 
-                    e sugestões.</p>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-sliders-h"></i>
-                    <h4>Personalização</h4>
-                    <p>Crie perfis, listas e receba 
-                        recomendações exclusivas para você.</p>
-                </div>
-            </div>
+  <!-- Modal do projeto Meowflix -->
+  <div class="modal" id="modalMeowflix" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Meowflix: App de Filmes e Séries</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
         </div>
-    </section>
+        <div class="modal-body">
+          <p>
+            O Meowflix é um app gratuito onde qualquer pessoa pode navegar por um catálogo de filmes e séries. 
+              O projeto foi feito com HTML para estrutura, CSS para o visual e JavaScript para interatividade.
+          </p>
+          <p>
+            A ideia é criar uma plataforma leve e acessível para estudantes e usuários que desejam ter acesso fácil ao entretenimento, com categorias, descrição dos conteúdos e até sugestões aleatórias.
+          </p>
+          <img src="img/meowflix-capa.png" class="img-fluid w-100" alt="Tela do projeto Meowflix" />
+        </div>
+        <div class="modal-footer">
+          <!-- Substitua os links abaixo pelos reais -->
+          <a href="https://github.com/seu-usuario/meowflix" target="_blank">Ver código do projeto</a>
+          <a href="https://seu-site.netlify.app" target="_blank">Ver projeto ao vivo</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <section id="showcase" class="showcase">
-        <div class="container">
-            <h3>Visualização do MeowFlix</h3>
-            <div class="screenshot-grid">
-                <img src="https://via.placeholder.com/300x500/0D1117/89CFF0?text=Tela+Principal+MeowFlix" alt="Tela principal do aplicativo MeowFlix">
-                <img src="https://via.placeholder.com/300x500/0D1117/89CFF0?text=Detalhes+Filme+MeowFlix" alt="Tela de detalhes de um filme MeowFlix">
-                <img src="https://via.placeholder.com/300x500/0D1117/89CFF0?text=Resultados+Busca+MeowFlix" alt="Tela de resultados de busca MeowFlix">
-            </div>
-        </div>
-    </section>
+  <footer class="container py-5">
+    <h2>Entre em contato</h2>
+    <div>
+      <i class="bi bi-github"></i>
+      <a href="https://github.com/seu-usuario">GitHub</a>
+    </div>
+    <p class="my-5 text-center">© 2025. Criado por Luana</p>
+  </footer>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h3>Vamos Conversar!</h3>
-            <p>Interessada(o) em saber mais sobre o
-                 MeowFlix ou meus projetos?
-                Me envie uma mensagem!</p>
-            <form action="#" method="POST">
-                <input type="text" name="name" placeholder="Seu Nome" required>
-                <input type="email" name="email" placeholder="Seu Melhor Email" required>
-                <textarea name="message" placeholder="Sua Mensagem..." rows="5" required></textarea>
-                <button type="submit" class="btn">Enviar Mensagem</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 **Luana Alves de Carlos**. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
-                    
